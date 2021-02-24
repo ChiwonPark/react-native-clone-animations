@@ -1,10 +1,7 @@
 import * as React from 'react';
 import {
-  Text,
-  View,
   StyleSheet,
   FlatList,
-  Image,
   Dimensions,
   Animated,
   StatusBar,
@@ -44,9 +41,9 @@ const Showcase = (props: ShowcaseProps) => {
               }),
             },
           ]}
-          source={{uri: e.image}}
+          source={typeof e.image === 'number' ? e.image : {uri: e.image}}
           resizeMode="cover"
-          blurRadius={5}
+          blurRadius={8}
         />
       ))}
 

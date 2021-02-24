@@ -21,7 +21,9 @@ const ShowcaseItem = ({id, name, image, onPress}: ShowcaseItemProps) => {
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.container}>
-        <Image style={styles.card} source={{uri: image}}></Image>
+        <Image
+          style={styles.card}
+          source={typeof image === 'number' ? image : {uri: image}}></Image>
         <Text style={styles.title}>{name}</Text>
       </View>
     </TouchableWithoutFeedback>

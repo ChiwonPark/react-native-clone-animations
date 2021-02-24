@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import Button from '../components/TransactionDay/Button';
-import colors from '../lib/colors';
-import Layout from '../components/TransactionDay/Layout';
-import FooterItem from '../components/TransactionDay/FooterItem';
+import Button from './Button';
+import colors from '../../lib/colors';
+import Layout from './Layout';
+import FooterItem from './FooterItem';
 
 //https://dribbble.com/shots/5901749-INvestment-app-Firststep
 

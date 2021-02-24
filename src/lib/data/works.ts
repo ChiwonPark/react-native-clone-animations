@@ -8,4 +8,14 @@ export default [
     routeName: 'transactionDay',
     date: '2020-02-11',
   },
+  {
+    id: 2,
+    name: 'Travel App',
+    description: 'parallax scroll, shared element',
+    source:
+      'https://dribbble.com/shots/7378780-Travel-App-Trip-Detail-Animation',
+    image: require('../images/TravelApp.png'),
+    routeName: 'travelApp_trips',
+    date: '2020-02-13',
+  },
 ];
